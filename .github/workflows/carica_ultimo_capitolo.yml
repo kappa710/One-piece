@@ -31,8 +31,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: Capitolo ${{ github.run_number }}
-          release_name: Capitolo di questa settimana ${{ github.run_number }}
+          tag_name: Capitolo 
+          release_name: Capitolo di questa settimana 
           draft: false
           prerelease: false
 
@@ -42,6 +42,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./ultimo.pdf
+          asset_path: ./
           asset_name: ultimo.pdf
           asset_content_type: application/pdf
