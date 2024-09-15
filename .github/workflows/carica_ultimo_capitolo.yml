@@ -31,7 +31,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: Capitolo 
+          tag_name: Capitolo ${{ github.run_id }}
           release_name: Capitolo di questa settimana 
           draft: false
           prerelease: false
