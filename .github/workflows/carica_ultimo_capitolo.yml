@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run script
-        run: python src/main.py last
+        run: python src/main.py ultimo
 
       - name: Create Release
         id: create_release
